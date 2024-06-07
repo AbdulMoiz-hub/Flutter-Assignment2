@@ -7,13 +7,19 @@ class LudoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     double deviceWidth = MediaQuery.of(context).size.width;
     double containerSize = deviceWidth / 15 - 2;
-    print(containerSize);
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            const Text(
+              'Abdul Moiz',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
